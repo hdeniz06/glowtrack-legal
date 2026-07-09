@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glowtrack — Gizlilik Politikası</title>
+<style>
+  :root {
+    --bg: #faf5ee;
+    --ink: #3c2d1e;
+    --muted: #8a7358;
+    --gold: #a8823f;
+    --line: #e8dcc9;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16100a;
+      --ink: #f2e7d8;
+      --muted: #b9a88f;
+      --gold: #cda86a;
+      --line: #3a2c1e;
+      --card: #211710;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--gold); font-weight: 600;
+  }
+  h1 {
+    font-family: "New York", ui-serif, Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 5vw, 40px); font-weight: 600;
+    margin: 10px 0 4px; line-height: 1.2;
+  }
+  h1 em { font-style: italic; color: var(--gold); }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 {
+    font-family: "New York", ui-serif, Georgia, serif;
+    font-size: 22px; font-weight: 600; margin: 40px 0 10px;
+  }
+  p, li { color: var(--ink); }
+  .lead {
+    font-size: 18px; border-left: 3px solid var(--gold);
+    padding: 4px 0 4px 16px; margin: 0 0 8px;
+  }
+  ul { padding-left: 22px; margin: 10px 0; }
+  li { margin: 6px 0; }
+  a { color: var(--gold); }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px; margin: 14px 0;
+  }
+  .card strong { display: block; margin-bottom: 4px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Glowtrack</div>
+  <h1>Gizlilik <em>Politikası</em></h1>
+  <p class="updated">Son güncelleme: 9 Temmuz 2026 · <a href="#english">English summary below</a></p>
+
+  <p class="lead">Glowtrack'in temel ilkesi basit: cildin senin telefonunda kalır.
+  Cilt analizi tamamen cihazında yapılır; fotoğrafların hiçbir sunucuya yüklenmez.</p>
+
+  <h2>Veri sorumlusu</h2>
+  <p>Glowtrack uygulamasının geliştiricisi ve 6698 sayılı KVKK kapsamında veri
+  sorumlusu: <strong>Deniz İzol</strong> — <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a></p>
+
+  <h2>Cihazında kalan veriler</h2>
+  <p>Aşağıdaki verilerin tamamı yalnızca senin cihazında saklanır; bize veya
+  üçüncü taraflara gönderilmez:</p>
+  <div class="card"><strong>Selfie'lerin ve cilt analizlerin</strong>
+  Cilt analizi, Apple'ın cihaz-üstü görüntü işleme teknolojisiyle telefonunda
+  çalışır. Fotoğrafların ve analiz sonuçların (cilt skoru, tahmini cilt yaşı,
+  metrikler) cihazının yerel veritabanında tutulur.</div>
+  <div class="card"><strong>Profil ve rutin bilgilerin</strong>
+  Kayıt sorularına verdiğin cevaplar (cilt tipi, hedefler, alışkanlıklar, bütçe
+  vb.), bakım rutinin ve günlük kayıtların cihazında saklanır.</div>
+  <div class="card"><strong>Apple ile giriş</strong>
+  Apple hesabınla giriş yaparsan yalnızca Apple'ın sağladığı kullanıcı
+  tanımlayıcısı ve adın cihazında saklanır; sunucuya gönderilmez.</div>
+  <div class="card"><strong>Hatırlatmalar</strong>
+  Rutin bildirimleri cihazında yerel olarak planlanır.</div>
+
+  <h2>İnternete giden veriler</h2>
+  <p>Bazı özellikler harici servislere <em>en az veriyle</em> istek gönderir:</p>
+  <ul>
+    <li><strong>İklim verisi</strong> — yazdığın şehir adı ve koordinatları,
+    UV/nem/hava kalitesi bilgisi almak için <a href="https://open-meteo.com/en/terms">Open-Meteo</a>'ya
+    gönderilir. Kimliğini tanımlayan hiçbir bilgi iletilmez.</li>
+    <li><strong>Ürün barkodu tarama</strong> — taradığın barkod numarası, ürün
+    bilgisi almak için <a href="https://world.openbeautyfacts.org">Open Beauty Facts</a>'e
+    gönderilir. Başka hiçbir veri iletilmez.</li>
+    <li><strong>AI koç sohbeti (Premium)</strong> — premium AI koç özelliğini
+    kullanırsan sohbet mesajların, yanıt üretmek için Anthropic'in Claude
+    API'sine iletilir (<a href="https://www.anthropic.com/legal/privacy">Anthropic gizlilik politikası</a>).
+    Fotoğrafların bu sohbete hiçbir zaman eklenmez.</li>
+  </ul>
+
+  <h2>Abonelik ve ödemeler</h2>
+  <p>Premium abonelikler Apple App Store üzerinden yürütülür. Ödeme ve fatura
+  bilgilerine erişimimiz yoktur; bu veriler Apple'ın
+  <a href="https://www.apple.com/legal/privacy/">gizlilik politikasına</a> tabidir.</p>
+
+  <h2>Analitik ve reklam</h2>
+  <p>Glowtrack hiçbir analitik, reklam veya izleme SDK'sı içermez. Davranışların
+  profillenmez, verilerin satılmaz veya reklam amaçlı paylaşılmaz.</p>
+
+  <h2>Verilerini silme</h2>
+  <p>Tüm verilerin cihazında olduğu için uygulamayı silmen, verilerinin tamamını
+  kalıcı olarak siler. Ayrıca uygulama içinden profil ve tarama geçmişini
+  istediğin zaman kaldırabilirsin.</p>
+
+  <h2>Çocukların gizliliği</h2>
+  <p>Glowtrack 13 yaş altı çocuklara yönelik değildir ve bilerek onlardan veri
+  toplamaz.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika değiştiğinde bu sayfada güncellenir; önemli değişiklikler
+  uygulama içinde ayrıca duyurulur.</p>
+
+  <h2>İletişim</h2>
+  <p>Sorular ve KVKK kapsamındaki başvurular için:
+  <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a></p>
+
+  <hr>
+
+  <h2 id="english">English summary</h2>
+  <p class="muted">Glowtrack analyzes your skin entirely on-device; your selfies
+  and analysis results never leave your phone. Your profile, routines and logs
+  are stored locally. A few features contact external services with minimal
+  data: city name/coordinates go to Open-Meteo for climate data, scanned
+  barcodes go to Open Beauty Facts, and — if you use the premium AI coach —
+  your chat messages are sent to Anthropic's Claude API (photos are never
+  included). Subscriptions are handled by Apple; we never see payment details.
+  No analytics, ads or tracking SDKs. Deleting the app permanently deletes all
+  your data. Not directed at children under 13. Contact:
+  <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a>.</p>
+
+  <footer>© 2026 Glowtrack · Deniz İzol</footer>
+</main>
+</body>
+</html>
