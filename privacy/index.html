@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Glowtrack — Gizlilik Politikası</title>
+<title>Glowtrack — Privacy Policy</title>
 <style>
   :root {
     --bg: #faf5ee;
@@ -48,6 +48,7 @@
     font-family: "New York", ui-serif, Georgia, serif;
     font-size: 22px; font-weight: 600; margin: 40px 0 10px;
   }
+  h3 { font-size: 16px; font-weight: 600; margin: 22px 0 6px; }
   p, li { color: var(--ink); }
   .lead {
     font-size: 18px; border-left: 3px solid var(--gold);
@@ -64,108 +65,178 @@
   .muted { color: var(--muted); font-size: 14px; }
   hr { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
   footer { color: var(--muted); font-size: 13px; margin-top: 48px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--card); }
 </style>
 </head>
 <body>
 <main>
   <div class="eyebrow">Glowtrack</div>
-  <h1>Gizlilik <em>Politikası</em></h1>
-  <p class="updated">Son güncelleme: 21 Temmuz 2026 · <a href="#english">English summary below</a></p>
+  <h1>Privacy <em>Policy</em></h1>
+  <p class="updated">Last updated: July 21, 2026</p>
 
-  <p class="lead">Glowtrack'in temel ilkesi basit: cildin senin telefonunda kalır.
-  Cilt analizi tamamen cihazında yapılır; fotoğrafların hiçbir sunucuya yüklenmez.</p>
+  <p class="lead">Glowtrack is built on one simple principle: your skin stays on
+  your phone. Skin analysis runs entirely on your device — your photos are never
+  uploaded to any server, ours or anyone else's.</p>
 
-  <h2>Veri sorumlusu</h2>
-  <p>Glowtrack uygulamasının geliştiricisi ve 6698 sayılı KVKK kapsamında veri
-  sorumlusu: <strong>Deniz İzol</strong> — <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a></p>
+  <p>This policy explains what information Glowtrack handles, where it lives,
+  what little of it ever leaves your device, and the choices you have. It
+  applies to the Glowtrack iOS app ("Glowtrack", "we", "us").</p>
 
-  <h2>Cihazında kalan veriler</h2>
-  <p>Aşağıdaki verilerin tamamı yalnızca senin cihazında saklanır; bize veya
-  üçüncü taraflara gönderilmez:</p>
-  <div class="card"><strong>Selfie'lerin ve cilt analizlerin</strong>
-  Cilt analizi, Apple'ın cihaz-üstü görüntü işleme teknolojisiyle telefonunda
-  çalışır. Fotoğrafların ve analiz sonuçların (cilt skoru, tahmini cilt yaşı,
-  metrikler) cihazının yerel veritabanında tutulur.</div>
-  <div class="card"><strong>Profil ve rutin bilgilerin</strong>
-  Kayıt sorularına verdiğin cevaplar (cilt tipi, hedefler, alışkanlıklar, bütçe
-  vb.), bakım rutinin ve günlük kayıtların cihazında saklanır.</div>
-  <div class="card"><strong>Döngü bilgilerin</strong>
-  Döngü takibini açarsan yalnızca iki bilgi tutulur: son regl başlangıç tarihin
-  ve ortalama döngü süren. Bu hassas sağlık verisi de sadece cihazında saklanır,
-  hiçbir sunucuya gönderilmez; döngüye bağlı hatırlatmalar cihazında yerel
-  olarak planlanır. Döngü takibini istediğin an kapatabilirsin.</div>
-  <div class="card"><strong>Misafir taramaları</strong>
-  Cihazında "Misafir" olarak yapılan taramalar da yalnızca cihazında saklanır,
-  senin ilerlemene karışmaz ve uygulama içinden tek tek silinebilir.</div>
-  <div class="card"><strong>Hatırlatmalar</strong>
-  Rutin bildirimleri cihazında yerel olarak planlanır.</div>
+  <h2>1. Who we are</h2>
+  <p>Glowtrack is developed and operated by the Glowtrack team. For any
+  privacy question or request, contact us at
+  <a href="mailto:vistalabs.dev@gmail.com">vistalabs.dev@gmail.com</a>. We are
+  the data controller for the limited processing described in this policy under
+  applicable data-protection laws, including the EU/UK GDPR and Türkiye's KVKK
+  (Law No. 6698).</p>
 
-  <h2>İnternete giden veriler</h2>
-  <p>Bazı özellikler harici servislere <em>en az veriyle</em> istek gönderir:</p>
+  <h2>2. Information that stays on your device</h2>
+  <p>Everything listed below is stored only in the app's local database on your
+  device. It is never transmitted to us or to third parties.</p>
+
+  <div class="card"><strong>Selfies and skin analyses</strong>
+  Skin analysis is performed on your device using Apple's on-device image
+  processing (the Vision framework). Your selfies, analysis results (skin
+  score, estimated skin-appearance range, hydration, texture and tone metrics)
+  and your scan history are stored locally. No photo ever leaves your phone —
+  not for analysis, not for backups, not for the AI coach.</div>
+
+  <div class="card"><strong>Profile and routine</strong>
+  Your onboarding answers (skin type, concerns, goals, sensitivities, habits,
+  budget and similar preferences), your skincare routine, custom steps and
+  product choices are stored on your device.</div>
+
+  <div class="card"><strong>Daily logs and check-ins</strong>
+  Routine completions, streaks, mood, water and sleep check-ins are stored
+  locally and used only to show your own progress inside the app.</div>
+
+  <div class="card"><strong>Cycle information</strong>
+  If you enable cycle tracking, Glowtrack keeps exactly two data points: the
+  start date of your last period and your average cycle length. We treat this
+  as sensitive health information: it is stored only on your device, is never
+  sent to any server, and is used solely to time gentle, cycle-aware skincare
+  suggestions and optional local reminders. You can turn cycle tracking off at
+  any time, and general trends shown around it are not medical advice.</div>
+
+  <div class="card"><strong>Guest scans</strong>
+  If someone else scans their face on your device as a "Guest", that scan is
+  stored only on your device, is kept strictly separate from your own progress
+  and comparisons, and can be deleted individually inside the app.</div>
+
+  <div class="card"><strong>Coach conversations</strong>
+  Your chat history with the coach is stored on your device so the conversation
+  can continue where you left off.</div>
+
+  <div class="card"><strong>Reminders</strong>
+  Routine and cycle reminders are scheduled locally through iOS notifications.
+  No notification content passes through our servers — we do not have any.</div>
+
+  <h2>3. Information that leaves your device</h2>
+  <p>A small number of features contact external services, always with the
+  minimum data needed for that feature and never with your photos, health data
+  or identity:</p>
+
+  <table>
+    <tr><th>Feature</th><th>What is sent</th><th>To whom</th></tr>
+    <tr>
+      <td>Climate-aware tips</td>
+      <td>The city name you typed and its coordinates</td>
+      <td><a href="https://open-meteo.com/en/terms">Open-Meteo</a> (UV, humidity
+      and air-quality data). No identifiers are included.</td>
+    </tr>
+    <tr>
+      <td>Product barcode check</td>
+      <td>Only the scanned barcode number</td>
+      <td><a href="https://world.openbeautyfacts.org">Open Beauty Facts</a>
+      (ingredient information). Nothing else is transmitted.</td>
+    </tr>
+    <tr>
+      <td>AI coach (Premium)</td>
+      <td>Your chat messages and relevant routine context needed to answer</td>
+      <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a>
+      (Claude API) to generate responses. Your photos are never included, and
+      your messages are not used to train models per Anthropic's commercial
+      terms.</td>
+    </tr>
+    <tr>
+      <td>Subscriptions</td>
+      <td>Device identifier and purchase/transaction information</td>
+      <td><a href="https://adapty.io/privacy/">Adapty</a>, solely to validate
+      and manage your subscription status. Your health data, photos and profile
+      answers are never shared with Adapty.</td>
+    </tr>
+  </table>
+
+  <h2>4. Purchases and payments</h2>
+  <p>Premium subscriptions and one-time purchases are processed by Apple through
+  the App Store. We never see or store your payment details; those are governed
+  by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.
+  Subscription state (active / expired / trial) is validated through Adapty as
+  described above.</p>
+
+  <h2>5. What we don't do</h2>
   <ul>
-    <li><strong>İklim verisi</strong> — yazdığın şehir adı ve koordinatları,
-    UV/nem/hava kalitesi bilgisi almak için <a href="https://open-meteo.com/en/terms">Open-Meteo</a>'ya
-    gönderilir. Kimliğini tanımlayan hiçbir bilgi iletilmez.</li>
-    <li><strong>Ürün barkodu tarama</strong> — taradığın barkod numarası, ürün
-    bilgisi almak için <a href="https://world.openbeautyfacts.org">Open Beauty Facts</a>'e
-    gönderilir. Başka hiçbir veri iletilmez.</li>
-    <li><strong>AI koç sohbeti (Premium)</strong> — premium AI koç özelliğini
-    kullanırsan sohbet mesajların, yanıt üretmek için Anthropic'in Claude
-    API'sine iletilir (<a href="https://www.anthropic.com/legal/privacy">Anthropic gizlilik politikası</a>).
-    Fotoğrafların bu sohbete hiçbir zaman eklenmez.</li>
+    <li>No accounts — Glowtrack works without sign-up, so there is no server-side
+    profile of you anywhere.</li>
+    <li>No analytics, advertising or tracking SDKs of any kind.</li>
+    <li>No selling, renting or sharing of your data for marketing purposes.</li>
+    <li>No profiling of your behavior across apps or websites.</li>
+    <li>No uploading of photos, health data or logs — there is no server to
+    upload them to.</li>
   </ul>
 
-  <h2>Abonelik ve ödemeler</h2>
-  <p>Premium abonelikler Apple App Store üzerinden yürütülür. Ödeme ve fatura
-  bilgilerine erişimimiz yoktur; bu veriler Apple'ın
-  <a href="https://www.apple.com/legal/privacy/">gizlilik politikasına</a> tabidir.</p>
-  <p>Abonelik durumunu yönetmek için <a href="https://adapty.io/privacy/">Adapty</a>
-  altyapısını kullanırız: satın alma işlendiğinde cihaz tanımlayıcısı ve
-  abonelik/işlem bilgisi Adapty'ye iletilir. Adapty bu veriyi yalnızca abonelik
-  durumunu doğrulamak için işler; sağlık verilerin, fotoğrafların veya profil
-  cevapların Adapty'ye asla gönderilmez.</p>
+  <h2>6. Data retention and deletion</h2>
+  <p>Because your data lives only on your device, you are in direct control of
+  it:</p>
+  <ul>
+    <li><strong>Deleting the app permanently deletes all your data</strong> —
+    selfies, analyses, profile, routines, logs, cycle information and chat
+    history. There is no server copy to remove.</li>
+    <li>Guest scans can be deleted individually inside the app, and your profile
+    details can be edited at any time.</li>
+    <li>Data included in your device backups (iCloud or local) is governed by
+    Apple's backup encryption and your own backup settings.</li>
+  </ul>
 
-  <h2>Analitik ve reklam</h2>
-  <p>Glowtrack hiçbir analitik, reklam veya izleme SDK'sı içermez. Davranışların
-  profillenmez, verilerin satılmaz veya reklam amaçlı paylaşılmaz.</p>
+  <h2>7. Security</h2>
+  <p>Your data is stored in the app's private container, protected by iOS
+  sandboxing and your device's encryption. Network calls the app does make
+  (listed in section 3) use HTTPS. Since we operate no servers and hold no
+  copies of your data, the most effective protection — keeping your data on
+  hardware you control — is the default.</p>
 
-  <h2>Verilerini silme</h2>
-  <p>Tüm verilerin cihazında olduğu için uygulamayı silmen, verilerinin tamamını
-  kalıcı olarak siler. Uygulama içinden misafir taramalarını tek tek
-  silebilirsin; profil bilgilerini istediğin zaman düzenleyebilirsin.</p>
+  <h2>8. Your rights</h2>
+  <p>Under the GDPR, KVKK and similar laws you have rights to access, correct,
+  delete and object to the processing of your personal data. Because Glowtrack
+  keeps your data on your device, you can exercise access, correction and
+  deletion directly inside the app or by deleting it. For anything else —
+  including questions about the limited third-party processing described above —
+  contact us at <a href="mailto:vistalabs.dev@gmail.com">vistalabs.dev@gmail.com</a>
+  and we will respond within the timelines required by law. You also have the
+  right to lodge a complaint with your local supervisory authority.</p>
 
-  <h2>Çocukların gizliliği</h2>
-  <p>Glowtrack 13 yaş altı çocuklara yönelik değildir ve bilerek onlardan veri
-  toplamaz.</p>
+  <h2>9. Children's privacy</h2>
+  <p>Glowtrack is not directed at children under 13 (or the higher minimum age
+  in your jurisdiction) and does not knowingly collect data from them. If you
+  believe a child has used the app, deleting the app removes all of their data.</p>
 
-  <h2>Değişiklikler</h2>
-  <p>Bu politika değiştiğinde bu sayfada güncellenir; önemli değişiklikler
-  uygulama içinde ayrıca duyurulur.</p>
+  <h2>10. Third-party links</h2>
+  <p>The app and this site link to third-party services (Apple, Anthropic,
+  Adapty, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
+  their own privacy policies, linked throughout this page.</p>
 
-  <h2>İletişim</h2>
-  <p>Sorular ve KVKK kapsamındaki başvurular için:
-  <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a></p>
+  <h2>11. Changes to this policy</h2>
+  <p>When this policy changes, we will update this page and revise the date at
+  the top. Material changes will additionally be announced inside the app before
+  they take effect.</p>
 
-  <hr>
+  <h2>12. Contact</h2>
+  <p>Questions, privacy requests, GDPR/KVKK applications:
+  <a href="mailto:vistalabs.dev@gmail.com">vistalabs.dev@gmail.com</a></p>
 
-  <h2 id="english">English summary</h2>
-  <p class="muted">Glowtrack analyzes your skin entirely on-device; your selfies
-  and analysis results never leave your phone. Your profile, routines, daily
-  logs and — if you enable cycle tracking — your last period date and average
-  cycle length are stored locally only. Guest scans made on your device also
-  stay on the device and can be deleted individually. A few features contact
-  external services with minimal data: city name/coordinates go to Open-Meteo
-  for climate data, scanned barcodes go to Open Beauty Facts, and — if you use
-  the premium AI coach — your chat messages are sent to Anthropic's Claude API
-  (photos are never included). Subscriptions are handled by Apple with
-  <a href="https://adapty.io/privacy/">Adapty</a> processing device and
-  transaction identifiers to validate subscription status; we never see payment
-  details, and your health data or photos are never shared with Adapty. No
-  analytics, ads or tracking SDKs. Deleting the app permanently deletes all
-  your data. Not directed at children under 13. Contact:
-  <a href="mailto:hdenizizol06@gmail.com">hdenizizol06@gmail.com</a>.</p>
-
-  <footer>© 2026 Glowtrack · Deniz İzol</footer>
+  <footer>© 2026 Glowtrack</footer>
 </main>
 </body>
 </html>
