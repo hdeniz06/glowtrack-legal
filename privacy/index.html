@@ -63,6 +63,11 @@
   }
   .card strong { display: block; margin-bottom: 4px; }
   .muted { color: var(--muted); font-size: 14px; }
+  .note {
+    border-left: 3px solid var(--gold); background: var(--card);
+    padding: 14px 18px; border-radius: 0 10px 10px 0; margin: 18px 0;
+    font-size: 15px;
+  }
   hr { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
   footer { color: var(--muted); font-size: 13px; margin-top: 48px; }
   table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
@@ -74,7 +79,7 @@
 <main>
   <div class="eyebrow">Glowtrack</div>
   <h1>Privacy <em>Policy</em></h1>
-  <p class="updated">Last updated: July 21, 2026</p>
+  <p class="updated">Last updated: August 30, 2026</p>
 
   <p class="lead">Glowtrack is built on one simple principle: your skin stays on
   your phone. Skin analysis runs entirely on your device — your photos are never
@@ -127,7 +132,14 @@
 
   <div class="card"><strong>Coach conversations</strong>
   Your chat history with the coach is stored on your device so the conversation
-  can continue where you left off.</div>
+  can continue where you left off. Note that the Premium AI coach also sends
+  each message onward to generate a reply — see section 3.</div>
+
+  <div class="card"><strong>Product label photos</strong>
+  When you photograph an ingredient list, the photo is read on your device
+  using Apple's Vision framework. The photo is not saved to our systems and is
+  never uploaded — only you see it. Ingredient scoring also runs entirely on
+  your device against a dictionary shipped inside the app.</div>
 
   <div class="card"><strong>Reminders</strong>
   Routine and cycle reminders are scheduled locally through iOS notifications.
@@ -154,11 +166,15 @@
     </tr>
     <tr>
       <td>AI coach (Premium)</td>
-      <td>Your chat messages and relevant routine context needed to answer</td>
-      <td><a href="https://www.anthropic.com/legal/privacy">Anthropic</a>
-      (Claude API) to generate responses. Your photos are never included, and
-      your messages are not used to train models per Anthropic's commercial
-      terms.</td>
+      <td>Your chat messages, the skin context needed to answer (skin type,
+      concerns, sensitivities, routine steps, streak — no photos), and a random
+      identifier created when you install the app</td>
+      <td>First our own function hosted on <a href="https://supabase.com/privacy">Supabase</a>
+      (servers in Frankfurt, EU), which holds the API key and counts your daily
+      messages, and from there <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>
+      (Claude API) to generate the reply. Your photos and scans are never
+      included, and your messages are not used to train models per Anthropic's
+      commercial terms.</td>
     </tr>
     <tr>
       <td>Subscriptions</td>
@@ -183,11 +199,23 @@
     <li>No analytics, advertising or tracking SDKs of any kind.</li>
     <li>No selling, renting or sharing of your data for marketing purposes.</li>
     <li>No profiling of your behavior across apps or websites.</li>
-    <li>No uploading of photos, health data or logs — there is no server to
-    upload them to.</li>
+    <li>No uploading of photos, scans or daily logs — these never leave your
+    device, for any feature.</li>
   </ul>
+  <p class="note"><strong>One honest correction.</strong> Until August 2026 this
+  policy said we operate no servers at all. That is no longer true: the Premium
+  AI coach passes your messages through a small function we run, so that the
+  key it needs is never shipped inside the app. That function stores no message
+  content — only a random install identifier and how many messages it saw that
+  day, to enforce the daily limit. Everything else in the app still runs
+  entirely on your device.</p>
 
   <h2>6. Data retention and deletion</h2>
+  <p>The only record we hold on a server is the coach message counter described
+  in section 3: a random install identifier, a date and a number. It contains no
+  message content and is deleted automatically after 30 days. To have it removed
+  sooner, email us — the identifier is shown nowhere, so include the approximate
+  dates you used the coach and we will locate and delete it.</p>
   <p>Because your data lives only on your device, you are in direct control of
   it:</p>
   <ul>
@@ -203,9 +231,11 @@
   <h2>7. Security</h2>
   <p>Your data is stored in the app's private container, protected by iOS
   sandboxing and your device's encryption. Network calls the app does make
-  (listed in section 3) use HTTPS. Since we operate no servers and hold no
-  copies of your data, the most effective protection — keeping your data on
-  hardware you control — is the default.</p>
+  (listed in section 3) use HTTPS. We hold no copy of your photos, scans,
+  profile or logs anywhere, so the most effective protection — keeping your data
+  on hardware you control — remains the default. The one server-side record we
+  do keep (the coach message counter) sits behind row-level security and is
+  reachable only by our own function, never by the app.</p>
 
   <h2>8. Your rights</h2>
   <p>Under the GDPR, KVKK and similar laws you have rights to access, correct,
@@ -224,7 +254,7 @@
 
   <h2>10. Third-party links</h2>
   <p>The app and this site link to third-party services (Apple, Anthropic,
-  Adapty, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
+  Supabase, Adapty, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
   their own privacy policies, linked throughout this page.</p>
 
   <h2>11. Changes to this policy</h2>
