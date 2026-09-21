@@ -79,7 +79,7 @@
 <main>
   <div class="eyebrow">Glowtrack</div>
   <h1>Privacy <em>Policy</em></h1>
-  <p class="updated">Last updated: September 13, 2026</p>
+  <p class="updated">Last updated: September 21, 2026</p>
 
   <p class="lead">Glowtrack is built on one simple principle: your skin stays on
   your phone. Skin analysis runs entirely on your device — your photos are never
@@ -87,7 +87,10 @@
 
   <p>This policy explains what information Glowtrack handles, where it lives,
   what little of it ever leaves your device, and the choices you have. It
-  applies to the Glowtrack iOS app ("Glowtrack", "we", "us").</p>
+  applies to the Glowtrack iOS app ("Glowtrack", "we", "us"). Because the app
+  analyses a photo of your face, <strong>section 2 is devoted entirely to face
+  data</strong> — what is collected, every use of it, sharing, retention,
+  and how to withdraw consent and delete it.</p>
 
   <h2>1. Who we are</h2>
   <p>Glowtrack is developed and operated by the Glowtrack team. For any
@@ -97,7 +100,129 @@
   applicable data-protection laws, including the EU/UK GDPR and Türkiye's KVKK
   (Law No. 6698).</p>
 
-  <h2>2. Information that stays on your device</h2>
+  <h2>2. Face data</h2>
+  <p>Glowtrack's skin analysis looks at a photo of your face, so this section
+  sets out in one place exactly what face data the app collects, every use we
+  make of it, who it is shared with, how long it is kept, and how you withdraw
+  your consent and delete it. The short version: <strong>face data never leaves
+  your device.</strong> Every step below happens on your iPhone or iPad. No
+  selfie, no facial landmark and no measurement derived from them is transmitted
+  to us or to anyone else, at any time, for any purpose.</p>
+
+  <h3>2.1 What face data we collect</h3>
+  <ul>
+    <li><strong>A selfie.</strong> The photo you take in the app, or pick from
+    your photo library, after you choose to start a scan. Nothing is captured in
+    the background: the camera is live only while you are on the scan screen,
+    and only if you granted camera access.</li>
+    <li><strong>Facial landmarks — in memory, for one analysis only.</strong>
+    While the scan is being analysed, Apple's on-device Vision framework locates
+    the face in the photo and the outlines of facial regions (forehead, cheeks,
+    nose, chin, and the brow, eye and lip areas, which are excluded from
+    measurement) so that readings are taken from skin rather than from hair,
+    eyes or background. These landmark coordinates exist only in the device's
+    working memory for the few seconds the analysis takes and are discarded when
+    it ends. They are never written to storage and never transmitted.</li>
+    <li><strong>Skin measurements derived from the photo.</strong> Inside those
+    regions the app computes non-identifying image statistics — brightness,
+    redness, tone and texture variance, shine — and converts them into your skin
+    scores (overall score, estimated skin-appearance range, hydration, texture,
+    tone evenness, and a per-region summary).</li>
+    <li><strong>What is actually saved.</strong> Only the selfie itself and
+    those numeric scores, and only to the app's private database on your own
+    device, so that you can look back at a scan and compare your progress.</li>
+  </ul>
+
+  <div class="note"><strong>No faceprint, and no facial recognition.</strong>
+  Glowtrack does not create, derive, store or use a faceprint, face template,
+  face embedding, face signature or any other biometric identifier. It performs
+  no facial recognition, identity verification or identity matching; it cannot
+  recognise you, tell two people apart, or match a face against any database. It
+  makes no emotion, demographic or age determinations, and it does not use
+  ARKit, the TrueDepth camera, depth maps or Face ID data. The landmarks
+  described above are geometric outlines used to place measurement zones on a
+  single photo, and they are destroyed as soon as that analysis finishes.</div>
+
+  <h3>2.2 How we use face data — the complete list</h3>
+  <ul>
+    <li>To measure the visible condition of your skin in the photo you just
+    provided, and turn it into that scan's result.</li>
+    <li>To show you that result, your scan history and your before/after
+    comparisons inside the app, on your device.</li>
+    <li>To choose which routine steps, tips and product suggestions the app
+    shows you, on your device.</li>
+  </ul>
+  <p>Those are all of the uses, and there are no disclosures. Face data is never
+  used for advertising, marketing, analytics, profiling, identity verification,
+  security, law enforcement, research, or to train, fine-tune or improve any
+  machine-learning model — ours or anyone else's. It is never combined with data
+  from other sources, and it is never used to build a profile of you outside the
+  app.</p>
+
+  <h3>2.3 Sharing face data</h3>
+  <p><strong>We do not share face data with any third party.</strong> Your
+  selfies, your facial landmarks and your scan images are never sold, rented,
+  licensed, disclosed or otherwise made available to any third party — no
+  service provider, advertiser, analytics provider, partner or affiliate — and
+  they are never uploaded to any server, including our own. They are not
+  included in any network request the app makes. In particular, the Premium AI
+  coach transmits text only: section 4 lists every field that leaves your device
+  for any feature, and no image, landmark or face measurement appears in that
+  list.</p>
+  <p>Because no third party ever receives face data, no third party processes,
+  stores or retains it. Should this ever change, we would obtain your explicit
+  consent first, update this policy before the change took effect, and require
+  by written contract that any such third party provide protection for the face
+  data that is the same as or equal to the protection stated in this policy —
+  including the limits on use, the prohibitions on identification, advertising
+  and model training, and the deletion rights set out here. We have no plans to
+  do this.</p>
+
+  <h3>2.4 How long face data is retained</h3>
+  <ul>
+    <li><strong>On our servers: never received, therefore never retained.</strong>
+    There is no server-side copy of your face data to keep, back up, log or
+    archive — not for a day, not for a second.</li>
+    <li><strong>On your device:</strong> a selfie and its scores remain in the
+    app's local database until you delete them in one of the ways below. Nothing
+    expires on its own, because the history exists purely so that you can see
+    your own progress; you decide how much of it to keep.</li>
+    <li><strong>Facial landmarks:</strong> retained in memory only for the
+    duration of a single analysis, then discarded. They are never persisted.</li>
+  </ul>
+
+  <h3>2.5 Withdrawing consent and deleting your face data</h3>
+  <p>You consent to this processing by choosing to take or select a photo and
+  start a scan — the app never scans on its own initiative. You can withdraw
+  that consent at any time, with no effect on the rest of the app: scanning is
+  optional, and your routine, logs, products and reminders all work without
+  it.</p>
+  <ul>
+    <li><strong>Stop any further collection.</strong> Simply stop scanning, or
+    revoke the app's access in iOS <em>Settings → Privacy &amp; Security →
+    Camera</em> and <em>→ Photos</em> (or <em>Settings → Glowtrack</em>). With
+    access revoked, Glowtrack cannot obtain a photo of your face at all.</li>
+    <li><strong>Delete all of it, inside the app.</strong> Open your profile
+    from the avatar on the Today screen and tap <em>"Delete all my data"</em>
+    ("Tüm verilerimi sil") under <em>Data</em>, then confirm. This immediately
+    and permanently erases every selfie and every scan result from the device,
+    together with your profile, routine history, daily logs, experiments and
+    coach conversation. It cannot be undone.</li>
+    <li><strong>Delete a guest's scans.</strong> Scans taken by someone else in
+    Guest mode are listed under <em>Profile → Guest scans</em> and can be
+    deleted individually by swiping.</li>
+    <li><strong>Delete the app.</strong> Removing Glowtrack from your device
+    deletes its entire container, including every selfie, scan and derived
+    score.</li>
+  </ul>
+  <p>Because we hold no copy of your face data, deleting it on your device is
+  complete deletion: there is no request to send us, no account to close, and no
+  server copy that could outlive it. If you would like written confirmation of
+  this, or have any question about face data, email
+  <a href="mailto:vistalabs.dev@gmail.com">vistalabs.dev@gmail.com</a> and we
+  will respond within the timelines required by law.</p>
+
+  <h2>3. Information that stays on your device</h2>
   <p>Everything listed below is stored only in the app's local database on your
   device. It is never transmitted to us or to third parties.</p>
 
@@ -106,7 +231,8 @@
   processing (the Vision framework). Your selfies, analysis results (skin
   score, estimated skin-appearance range, hydration, texture and tone metrics)
   and your scan history are stored locally. No photo ever leaves your phone —
-  not for analysis, not for backups, not for the AI coach.</div>
+  not for analysis, not for backups, not for the AI coach. Section 2 covers
+  face data in full.</div>
 
   <div class="card"><strong>Profile and routine</strong>
   Your onboarding answers (skin type, concerns, goals, sensitivities, habits,
@@ -133,7 +259,7 @@
   <div class="card"><strong>Coach conversations</strong>
   Your chat history with the coach is stored on your device so the conversation
   can continue where you left off. Note that the Premium AI coach also sends
-  each message onward to generate a reply — see section 3.</div>
+  each message onward to generate a reply — see section 4.</div>
 
   <div class="card"><strong>Product label photos</strong>
   When you photograph an ingredient list, the photo is read on your device
@@ -145,7 +271,7 @@
   Routine and cycle reminders are scheduled locally through iOS notifications.
   No notification content passes through our servers — we do not have any.</div>
 
-  <h2>3. Information that leaves your device</h2>
+  <h2>4. Information that leaves your device</h2>
   <p>A small number of features contact external services, always with the
   minimum data needed for that feature and never with your photos or scan
   images. The Premium coach is the one feature that also sends skin and
@@ -203,33 +329,35 @@
     </tr>
   </table>
 
-  <h2>4. Purchases and payments</h2>
+  <h2>5. Purchases and payments</h2>
   <p>Premium subscriptions and one-time purchases are processed by Apple through
   the App Store. We never see or store your payment details; those are governed
   by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.
   Subscription state (active / expired / trial) is validated through Adapty as
   described above.</p>
 
-  <h2>5. What we don't do</h2>
+  <h2>6. What we don't do</h2>
   <ul>
     <li>No accounts — Glowtrack works without sign-up, so there is no server-side
     profile of you anywhere.</li>
     <li>No analytics, advertising or tracking SDKs of any kind.</li>
     <li>No selling, renting or sharing of your data for marketing purposes.</li>
     <li>No profiling of your behavior across apps or websites.</li>
+    <li>No faceprints, face templates or biometric identifiers, no facial
+    recognition and no identity matching — see section 2.</li>
     <li>No uploading of your selfies, scan images or scan history — these never
     leave your device, for any feature. Your daily log stays on your phone as
-    well; only the current values listed in section 3 are passed to the coach,
+    well; only the current values listed in section 4 are passed to the coach,
     and a product's front-of-pack photo is uploaded only if you switch that on
     while contributing to the catalog.</li>
   </ul>
   <p class="note"><strong>A second correction.</strong> Until September 2026
   the section above claimed that no feature sends your health data or identity.
   That was wrong: the Premium coach has always sent your name and the skin and
-  lifestyle details listed in section 3, including whether you marked yourself
-  as pregnant or breastfeeding. Section 5 also said daily logs never leave the
+  lifestyle details listed in section 4, including whether you marked yourself
+  as pregnant or breastfeeding. This section also said daily logs never leave the
   device, while the coach has always received your current water, sleep and
-  stress levels. Nothing about the app changed — the description did. Section 3
+  stress levels. Nothing about the app changed — the description did. Section 4
   now lists every field that leaves your device.</p>
   <p class="note"><strong>One honest correction.</strong> Until August 2026 this
   policy said we operate no servers at all. That is no longer true: the Premium
@@ -239,9 +367,12 @@
   day, to enforce the daily limit. Everything else in the app still runs
   entirely on your device.</p>
 
-  <h2>6. Data retention and deletion</h2>
+  <h2>7. Data retention and deletion</h2>
+  <p>Face data has its own retention and deletion rules, set out in sections 2.4
+  and 2.5: we retain none of it, ever, because it never reaches us, and you can
+  erase the copy on your device at any time.</p>
   <p>The only record we hold on a server is the coach message counter described
-  in section 3: a random install identifier, a date and a number. It contains no
+  in section 4: a random install identifier, a date and a number. It contains no
   message content and is deleted automatically after 30 days. To have it removed
   sooner, email us — the identifier is shown nowhere, so include the approximate
   dates you used the coach and we will locate and delete it.</p>
@@ -264,16 +395,16 @@
     Apple's backup encryption and your own backup settings.</li>
   </ul>
 
-  <h2>7. Security</h2>
+  <h2>8. Security</h2>
   <p>Your data is stored in the app's private container, protected by iOS
   sandboxing and your device's encryption. Network calls the app does make
-  (listed in section 3) use HTTPS. We hold no copy of your photos, scans,
+  (listed in section 4) use HTTPS. We hold no copy of your photos, scans,
   profile or logs anywhere, so the most effective protection — keeping your data
   on hardware you control — remains the default. The one server-side record we
   do keep (the coach message counter) sits behind row-level security and is
   reachable only by our own function, never by the app.</p>
 
-  <h2>8. Your rights</h2>
+  <h2>9. Your rights</h2>
   <p>Under the GDPR, KVKK and similar laws you have rights to access, correct,
   delete and object to the processing of your personal data. Because Glowtrack
   keeps your data on your device, you can exercise access, correction and
@@ -283,22 +414,22 @@
   and we will respond within the timelines required by law. You also have the
   right to lodge a complaint with your local supervisory authority.</p>
 
-  <h2>9. Children's privacy</h2>
+  <h2>10. Children's privacy</h2>
   <p>Glowtrack is not directed at children under 13 (or the higher minimum age
   in your jurisdiction) and does not knowingly collect data from them. If you
   believe a child has used the app, deleting the app removes all of their data.</p>
 
-  <h2>10. Third-party links</h2>
+  <h2>11. Third-party links</h2>
   <p>The app and this site link to third-party services (Apple, Anthropic,
   Supabase, Adapty, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
   their own privacy policies, linked throughout this page.</p>
 
-  <h2>11. Changes to this policy</h2>
+  <h2>12. Changes to this policy</h2>
   <p>When this policy changes, we will update this page and revise the date at
   the top. Material changes will additionally be announced inside the app before
   they take effect.</p>
 
-  <h2>12. Contact</h2>
+  <h2>13. Contact</h2>
   <p>Questions, privacy requests, GDPR/KVKK applications:
   <a href="mailto:vistalabs.dev@gmail.com">vistalabs.dev@gmail.com</a></p>
 
