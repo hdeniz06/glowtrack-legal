@@ -79,7 +79,7 @@
 <main>
   <div class="eyebrow">Glowtrack · Işılda</div>
   <h1>Privacy <em>Policy</em></h1>
-  <p class="updated">Last updated: September 21, 2026</p>
+  <p class="updated">Last updated: October 18, 2026</p>
 
   <p class="lead">Glowtrack is built on one simple principle: your skin stays on
   your phone. Skin analysis runs entirely on your device — your photos are never
@@ -166,7 +166,9 @@
   licensed, disclosed or otherwise made available to any third party — no
   service provider, advertiser, analytics provider, partner or affiliate — and
   they are never uploaded to any server, including our own. They are not
-  included in any network request the app makes. In particular, the Premium AI
+  included in any network request the app makes. This includes Meta: the
+  ad-measurement events described in section 4 say only that a scan was
+  completed — never the photo, the score or any result. The Premium AI
   coach transmits text only: section 4 lists every field that leaves your device
   for any feature, and no image, landmark or face measurement appears in that
   list.</p>
@@ -325,9 +327,29 @@
     <tr>
       <td>Subscriptions</td>
       <td>Device identifier and purchase/transaction information</td>
-      <td><a href="https://adapty.io/privacy/">Adapty</a>, solely to validate
-      and manage your subscription status. Your health data, photos and profile
-      answers are never shared with Adapty.</td>
+      <td><a href="https://adapty.io/privacy/">Adapty</a>, to validate and
+      manage your subscription status, and to report trial conversions and
+      renewals to Meta for ad measurement (see the next row). Your health data,
+      photos and profile answers are never shared with Adapty.</td>
+    </tr>
+    <tr>
+      <td>Ad measurement (Meta)</td>
+      <td>That the app was installed and opened; that a skin scan was completed
+      (only the fact that it happened — never the photo, the score or any
+      result); and trial and subscription events (product and price). These
+      come with a random identifier the Meta SDK creates in the app and basic
+      device information such as model, iOS version, language and time zone.
+      Your device's advertising identifier (IDFA) is included
+      <strong>only if you tap “Allow”</strong> in the iOS tracking prompt.</td>
+      <td><a href="https://www.facebook.com/privacy/policy/">Meta Platforms
+      Ireland</a> (Facebook SDK), so we can see which of our Instagram and
+      Facebook ads lead to installs and subscriptions, and so those ads reach
+      people likely to find the app useful. If you do not allow tracking, no
+      advertising identifier is sent and Meta may use the events only for
+      aggregated measurement (Apple's SKAdNetwork and Meta's Aggregated Event
+      Measurement), not to target you personally. You can change your choice
+      at any time in iOS Settings → Privacy &amp; Security → Tracking. Screen
+      titles and screen-layout sampling are switched off in the app.</td>
     </tr>
   </table>
 
@@ -342,9 +364,14 @@
   <ul>
     <li>No accounts — Glowtrack works without sign-up, so there is no server-side
     profile of you anywhere.</li>
-    <li>No analytics, advertising or tracking SDKs of any kind.</li>
-    <li>No selling, renting or sharing of your data for marketing purposes.</li>
-    <li>No profiling of your behavior across apps or websites.</li>
+    <li>No analytics SDKs. Since version 1.0.4 there is exactly one
+    advertising-measurement SDK — Meta's, described in section 4 — and it never
+    receives your photos, scans or skin data.</li>
+    <li>No selling or renting of your data, and no sharing of your health,
+    skin or profile data for marketing purposes.</li>
+    <li>No profiling of your behavior across apps or websites by us. Meta may
+    link the events in section 4 with your activity in other companies' apps
+    only if you choose “Allow” in the iOS tracking prompt.</li>
     <li>No faceprints, face templates or biometric identifiers, no facial
     recognition and no identity matching — see section 2.</li>
     <li>No uploading of your selfies, scan images or scan history — these never
@@ -353,6 +380,12 @@
     and a product's front-of-pack photo is uploaded only if you switch that on
     while contributing to the catalog.</li>
   </ul>
+  <p class="note"><strong>What changed in October 2026.</strong> Until version
+  1.0.4 this section said the app contained no advertising or tracking SDK of
+  any kind. That was true until then and no longer is: we now advertise the app
+  on Instagram and Facebook, and Meta's SDK tells us which ads lead to installs
+  and subscriptions. Section 4 lists exactly what it receives. Your selfies,
+  scans and skin data are not part of it.</p>
   <p class="note"><strong>A second correction.</strong> Until September 2026
   the section above claimed that no feature sends your health data or identity.
   That was wrong: the Premium coach has always sent your name and the skin and
@@ -385,12 +418,19 @@
   contribution is processed and in any case within 90 days. To have a
   contribution removed, email us with the product name and the approximate
   date.</p>
+  <p>The ad-measurement events in section 4 are held by Meta, not by us, under
+  <a href="https://www.facebook.com/privacy/policy/">Meta's privacy policy</a>.
+  They are tied only to a random app identifier and contain no photos, scans or
+  skin data. If you allowed tracking, you can withdraw that at any time in iOS
+  Settings → Privacy &amp; Security → Tracking; for anything else about these
+  events, email us and we will help you raise it with Meta.</p>
   <p>Because your data lives only on your device, you are in direct control of
   it:</p>
   <ul>
     <li><strong>Deleting the app permanently deletes all your data</strong> —
     selfies, analyses, profile, routines, logs, cycle information and chat
-    history. There is no server copy to remove.</li>
+    history. There is no server copy to remove (apart from the records
+    described above).</li>
     <li>Guest scans can be deleted individually inside the app, and your profile
     details can be edited at any time.</li>
     <li>Data included in your device backups (iCloud or local) is governed by
@@ -423,7 +463,7 @@
 
   <h2>11. Third-party links</h2>
   <p>The app and this site link to third-party services (Apple, Anthropic,
-  Supabase, Adapty, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
+  Supabase, Adapty, Meta, Open-Meteo, Open Beauty Facts). Their handling of data is governed by
   their own privacy policies, linked throughout this page.</p>
 
   <h2>12. Changes to this policy</h2>
